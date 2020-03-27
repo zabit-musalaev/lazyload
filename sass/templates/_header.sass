@@ -1,0 +1,59 @@
+.header 
+  position: fixed
+  width: 100%
+  z-index: 99
+  background-color: $dark
+  padding: 24px 0
+
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.logo
+  font-size: 1.075rem
+  color: $primary
+  text-transform: uppercase
+  &:hover
+    color: $light
+  &__link
+    text-decoration: none
+   
+
+
+.nav a
+  position: relative
+
+  &:after
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    width: 0%
+    content: '.'
+    color: transparent
+    background: $primary
+    height: 1px
+
+  &:hover:after
+    width: 100%
+    transition: all .5s
+
+.nav
+  &__items
+    text-decoration: none
+    color: $light
+    text-transform: uppercase
+    margin-right: 2.5rem
+    transition: color 0.2s
+    &:hover
+      color: $primary
+
+.phone
+  color: $primary
+.contacts
+  &__phone
+    margin-right: 45px
+    &:hover
+      color: $light
